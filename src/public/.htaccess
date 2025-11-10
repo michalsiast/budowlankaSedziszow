@@ -21,4 +21,8 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^wykanczaniewnetrz-jarek.pl$ [NC]
+    RewriteRule ^(.*)$ https://www.wykanczaniewnetrz-jarek.pl/$1 [L,R=301]
 </IfModule>
