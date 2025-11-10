@@ -4,12 +4,11 @@
             <div class="atf-home-overlay">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-xl-8 col-lg-10">
+                        <div class="col-xl-9 col-lg-11">
                             <div class="atf-slider-content text-center">
                                 <span class="sub-title mb-10">USŁUGI REMONTOWO-BUDOWLANE</span>
                                 <h2 class="title mb-25">{{$item->name}}</h2>
-                                {!! $item->text !!}
-                                <p class="description mb-35">We build with precision, passion, and purpose. From residential projects to large <br>scale industrial our team delivers high-quality construction.</p>
+                                {!! str_replace('<p>', '<p class="description mb-35">', $item->text) !!}
                                 <!-- Main-btn -->
                                 <div class="atf-main-btn">
                                     <a class="atf-themes-btn bg-white" href="{{ route('gallery.show') }}">Zobacz galerię

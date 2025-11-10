@@ -20,8 +20,15 @@ abstract class PageType extends Enum
         'module' => false,
         'fields' => [
             'rotator' => ['rotator', 'Slider'],
-            'head1' => ['head', 'Tytuł'],
-            'text1' => ['text', 'Tekst'],
+            'subtitle_about_us'      => ['head', 'Podtytył - O nas'],
+            'title_about_us'       => ['head', 'Tytuł - O nas'],   
+            'description_about_us' => ['text', 'Opis - O nas'], 
+            'subtitle_offer'       => ['head', 'Podtytuł - Oferta'],
+            'title_offer'          => ['head', 'Tytuł - Oferta'],
+            'offer_item_title'       => ['head', 'Tytuł - Usługa'],
+            'offer_item_description' => ['text', 'Opis - Usługa'],
+            'subtitle_why_us' => ['head', 'Podtytuł - Dlaczego my'],
+            'title_why_us'    => ['head', 'Tytuł - Dlaczego my'],
         ]
     ];
     const PAGE_SHOW = [

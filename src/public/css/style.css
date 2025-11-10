@@ -2521,11 +2521,12 @@ input[type="color"] {
 	font-size:24px;
 	font-weight:600;
 }
-.atf-service-title:hover {
-	color:  var(--atf-thm-color); 
-}
 .atf-service-box-content p{
 	margin:0;
+}
+.atf-service-box-content ul{
+	padding-left: 35px;
+	margin-bottom: 10px;
 }
 .atf-service-btn a{
 	width: 60px;
@@ -2779,9 +2780,6 @@ input[type="color"] {
 	font-weight:600;
 	transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
-}
-.step-title:hover{
-	color: var(--atf-thm-color);
 }
 .step-card-active {
     border-color: #ff5a00; 
