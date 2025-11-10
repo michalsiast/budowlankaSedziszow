@@ -64,13 +64,16 @@
             </svg>
             <div class="loader-inner">
                 <div class="loaded">
-                    <span>C</span>
+                    <span>B</span>
+                    <span>U</span>
+                    <span>D</span>
                     <span>O</span>
+                    <span>W</span>
+                    <span>L</span>
+                    <span>A</span>
                     <span>N</span>
-                    <span>C</span>
-                    <span>O</span>
-                    <span>C</span>
-                    <span>T</span>
+                    <span>K</span>
+                    <span>A</span>
                 </div>
             </div>
         </div>
@@ -95,7 +98,7 @@
             <div class="atf-hamburger-wrapper">
                 <div class="atf-hamburger-header d-flex justify-content-between align-items-center mb-50">
                     <div class="atf-hamburger-logo">
-                        <a href="index.html"><img src="assets/img/logo/logo-black.png" alt=""></a>
+                        <a href="/"><img src="{{asset('images/logo.png')}}" style="height: 100px;" alt=""></a>
                     </div>
                     <div class="atf-hamburger-close">
                         <button class="atf-hamburger-close-toggle"><i class="fa fa-times"></i></button>
@@ -108,7 +111,7 @@
                 
 
                 <div class="atf-hamburger-info mb-50">
-                    <h3 class="atf-hamburger-sm-title">Your Address</h3>
+                    <h3 class="atf-hamburger-sm-title">Dane kontaktowe</h3>
                     <span><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}"><i class="fa-light fa-phone me-2"></i> {{getConstField('phone')}}</a></span>
                     <span><a href="mailto:{{getConstField('email')}}"><i class="fa-light fa-envelope me-2"></i> {{getConstField('email')}}</a></span>
                     <span><a href="{{getConstField('google_map')}}"><i class="fa-light fa-map-marker-alt me-2"></i> {{getConstField('company_address')}}, {{getConstField('company_post_code')}} {{getConstField('company_city')}}</a></span>
@@ -139,7 +142,7 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-6 ">
                             <div class="atf-site-logo">
-                                <a href="index.html"><img class="logo-black" src="assets/img/logo/logo.png" alt="Logo"></a>
+                                <a href="/"><img class="logo-black" style="height: 100px;" src="{{asset('images/logo.png')}}" alt="Logo"></a>
                             </div>
                         </div>
                         
@@ -197,7 +200,6 @@
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.jquery.min.js" integrity="sha512-iJCzEG+s9LeaFYGzCbDInUbnF03KbE1QV1LM983AW5EHLxrWQTQaZvQfAQgLFgfgoyozb1fhzhe/0jjyZPYbmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="{{asset('js/frontend.js')}}"></script>
 <script src="{{asset('js/main.min.js')}}"></script>
 <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('js/jquery.min.js')}}"></script>
@@ -205,6 +207,7 @@
 <script src="{{asset('js/plugin.min.js')}}"></script>
 <script src="{{asset('js/form-contact.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.jquery.min.js" integrity="sha512-iJCzEG+s9LeaFYGzCbDInUbnF03KbE1QV1LM983AW5EHLxrWQTQaZvQfAQgLFgfgoyozb1fhzhe/0jjyZPYbmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="{{asset('js/frontend.js')}}"></script>
 
 @stack('scripts.body.bottom')
 </body>

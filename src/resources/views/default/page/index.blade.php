@@ -114,6 +114,66 @@
         @include('default.article.home')
     </div>
 </section>
+
+<div id="funfact" class="atf-funfact-wrapp pb-80 pt-80 black-bg p-relative">
+    <div class="left-glow"></div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gx-0 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".5s">
+                <div class="atf-funfact-item">
+                    @if(!empty($fields->number_counter_1) || !empty($fields->symbol_counter_1))
+                        <h4 class="atf-funfact-title">
+                            @if(!empty($fields->number_counter_1))
+                                <span class="counter-number number">{{ $fields->number_counter_1 }}</span>
+                            @endif
+
+                            @if(!empty($fields->symbol_counter_1))
+                                {{ $fields->symbol_counter_1 }}
+                            @endif
+                        </h4>
+                    @endif
+                    @if(!empty($fields->title_counter_1))
+                        <p>{{ $fields->title_counter_1 }}</p>
+                    @endif
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gx-0 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+                <div class="atf-funfact-item">
+                    @if(!empty($fields->number_counter_2) || !empty($fields->symbol_counter_2))
+                        <h4 class="atf-funfact-title">
+                            @if(!empty($fields->number_counter_2))
+                                <span class="counter-number number">{{ $fields->number_counter_2 }}</span>
+                            @endif
+                            @if(!empty($fields->symbol_counter_2))
+                                {{ $fields->symbol_counter_2 }}
+                            @endif
+                        </h4>
+                    @endif
+                    @if(!empty($fields->title_counter_2))
+                        <p>{{ $fields->title_counter_2 }}</p>
+                    @endif
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 gx-0 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">
+                <div class="atf-funfact-item">
+                    @if(!empty($fields->number_counter_3) || !empty($fields->symbol_counter_3))
+                        <h4 class="atf-funfact-title">
+                            @if(!empty($fields->number_counter_3))
+                                <span class="counter-number number">{{ $fields->number_counter_3 }}</span>
+                            @endif
+                            @if(!empty($fields->symbol_counter_3))
+                                {{ $fields->symbol_counter_3 }}
+                            @endif
+                        </h4>
+                    @endif
+                    @if(!empty($fields->title_counter_3))
+                        <p>{{ $fields->title_counter_3 }}</p>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <section id="contact" class="atf-contact-area p-relative atf-section-padding">
     <div class="container">
         <div class="row align-items-center">

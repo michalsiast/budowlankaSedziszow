@@ -29,6 +29,17 @@ abstract class PageType extends Enum
             'offer_item_description' => ['text', 'Opis - Usługa'],
             'subtitle_why_us' => ['head', 'Podtytuł - Dlaczego my'],
             'title_why_us'    => ['head', 'Tytuł - Dlaczego my'],
+            'title_counter_1'  => ['head', 'Nagłówek - Licznik 1'],
+            'number_counter_1' => ['head', 'Liczba - Licznik 1'],
+            'symbol_counter_1' => ['head', 'Symbol - Licznik 1'],
+
+            'title_counter_2'  => ['head', 'Nagłówek - Licznik 2'],
+            'number_counter_2' => ['head', 'Liczba - Licznik 2'],
+            'symbol_counter_2' => ['head', 'Symbol - Licznik 2'],
+
+            'title_counter_3'  => ['head', 'Nagłówek - Licznik 3'],
+            'number_counter_3' => ['head', 'Liczba - Licznik 3'],
+            'symbol_counter_3' => ['head', 'Symbol - Licznik 3'],
         ]
     ];
     const PAGE_SHOW = [

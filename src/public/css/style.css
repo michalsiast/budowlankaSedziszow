@@ -3189,7 +3189,8 @@ input[type="color"] {
 }
 .breadcrumb-bg-attach {
 	background-size: cover;
-	background-position: center center;
+	background-position-y: 30%;
+	background-position-x: center;
 	background-repeat: no-repeat;
 }
 .breadcrumb-spacing {
